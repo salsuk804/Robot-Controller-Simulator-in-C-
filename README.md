@@ -2,16 +2,14 @@
 A terminal-based robot movement controller on a fixed 10-cell array, featuring move history, reboot, and cancel support
 
 
-#Project Description
+# Project Description
 This C++ program simulates a robot moving within a fixed-size array of 10 cells (from index 0 to 9). The robot begins at position 0 and can move left or right based on user input through a menu. The program supports command history, which allows reversing previous actions using the cancel(n) command.
 
 #Problem Statement
 Design a C++ program that controls the movement of a robot along a 1D array of size 10 using a set of commands accessed via a terminal-based menu. The robot must always remain within the array bounds and maintain a history of movements for potential rollback.
 
-#Controller Menu
-markdown
-Copy
-Edit
+# Controller Menu
+
 1. Right
 2. Left
 3. Display
@@ -19,7 +17,8 @@ Edit
 5. Show Array
 6. Cancel
 7. Exit
-🔧 Command Descriptions
+
+# Command Descriptions
 Right(n) – Move the robot n cells to the right. If out of bounds, reject the move.
 
 Left(n) – Move the robot n cells to the left. If out of bounds, reject the move.
@@ -34,7 +33,7 @@ Cancel(n) – Cancel the last n movement/reboot operations and return the robot 
 
 Exit – Terminate the program.
 
-#Implementation Requirements
+# Implementation Requirements
 Each command must be implemented in a separate function.
 
 Ensure the robot never moves outside the bounds [0, 9].
